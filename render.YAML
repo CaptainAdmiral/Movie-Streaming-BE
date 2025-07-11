@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: movie-streaming-be
+    runtime: python
+    buildCommand: ""
+    startCommand: uvicorn backend:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: PORT
+        value: 10000
